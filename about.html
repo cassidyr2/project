@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/home/mrmccoy/Pictures/how_to_become_a_software_engineer.avif">
+    <title>About</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+<style>
+    /* Toggle Dark Theme */
+    #theme-btn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #596AFF;
+    }
+    #theme-btn:hover {
+      color: #BB86FC;
+    }
+    .changeTheme {
+      background: #1D1E22;
+      color: #eee;
+    }
+    </style>
+<body style="background-color: chartreuse;">
+    <div id="theme-btn" class="far fa-moon"></div>
+    
+      <script>
+        //gets the button by ID from your HTML element
+        const themeBtn = document.getElementById("theme-btn");
+        //when you click that button
+        themeBtn.onclick = () => {
+        //the default class "fa-moon" switches to "fa-sun" on toggle
+          themeBtn.classList.toggle("fa-sun");
+        //after the switch on toggle, if your button contains "fa-sun" class
+          if (themeBtn.classList.contains("fa-sun")) {
+        //onclicking themeBtn, the changeTheme styling will be applied to the body of your HTML
+            document.body.classList.add("changeTheme");
+          } else {
+        // onclicking themeBtn, applied changeTheme styling will be removed
+            document.body.classList.remove("changeTheme");
+          }
+        }
+    </script>
+    <article>
+    <header style="text-align: center;">
+      <h1 style="text-align: center;"><strong>ABOUT ME</strong></h1>
+      <nav style="display:flow-root;">
+        <hr>
+  
+          <a href="page1.html">Homepage</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+      <img src="images.jpeg" width="250" height="250" alt="programmer">
+      <p>
+
+        <p>Organized and self-motivated software engineer graduate with 2+ years combined internship and professional experience. Fluent in .Net C#, SQL, Python, JavaScript, and CSS programming languages. Possess practical working knowledge of relational databases using PostgreSQL, SQL Server, Cloud Development, and Agile Development. Constantly updating personal and professional technical skills with complementary collegiate courses and online bootcamps. Reliable and responsible team player.</p>
+        <p>
+
+          <p>A versatile, hardworking individual; driven to meet or exceed a company’s expectations to deliver high-quality software products. Experienced in Java, JavaScript, Swift, SQL, Go, and Python. An effective listener that can communicate technical information in an easily understandable way. Offers a strong background in creative problem-solving and a proven ability to multi-task and prioritize in fast-paced, stressful environments.</p>
+            
+          <audio src="Hotkid-My-Way-(TrendyBeatz.com).mp3" autoplay controls></audio>
+
+        </p>
+            
+      </p>
+    </header>
+    </article>
+
+    <footer style="text-align: center;">
+      Copyright &copy; GoMyCode Inc.
+      <nav style="display:flow-root;">
+        <hr>
+  
+          <a href="page1.html">Homepage</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
+
+    
+</body>
+</html>

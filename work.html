@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/home/mrmccoy/Pictures/how_to_become_a_software_engineer.avif">
+    <title>Work</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+<style>
+    /* Toggle Dark Theme */
+    #theme-btn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #596AFF;
+    }
+    #theme-btn:hover {
+      color: #BB86FC;
+    }
+    .changeTheme {
+      background: #1D1E22;
+      color: #eee;
+    }
+    </style>
+<body style="background-color: beige;">
+    <div id="theme-btn" class="far fa-moon"></div>
+    
+      <script>
+        //gets the button by ID from your HTML element
+        const themeBtn = document.getElementById("theme-btn");
+        //when you click that button
+        themeBtn.onclick = () => {
+        //the default class "fa-moon" switches to "fa-sun" on toggle
+          themeBtn.classList.toggle("fa-sun");
+        //after the switch on toggle, if your button contains "fa-sun" class
+          if (themeBtn.classList.contains("fa-sun")) {
+        //onclicking themeBtn, the changeTheme styling will be applied to the body of your HTML
+            document.body.classList.add("changeTheme");
+          } else {
+        // onclicking themeBtn, applied changeTheme styling will be removed
+            document.body.classList.remove("changeTheme");
+          }
+        }
+    </script>
+    <header>
+      <h1>
+        <strong>This page is still under construction</strong>
+      </h1>
+    </header>
+    <footer style="text-align: center;">
+      Copyright &copy; GoMyCode Inc.
+      <nav style="display:flow-root;">
+        <hr>
+  
+          <a href="page1.html">Homepage</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
+    
+</body>
+</html>

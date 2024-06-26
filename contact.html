@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/home/mrmccoy/Pictures/how_to_become_a_software_engineer.avif">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+<style>
+    /* Toggle Dark Theme */
+    #theme-btn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #596AFF;
+    }
+    #theme-btn:hover {
+      color: #BB86FC;
+    }
+    .changeTheme {
+      background: #1D1E22;
+      color: #eee;
+    }
+    </style>
+<body style="background-color:aquamarine;">
+    <div id="theme-btn" class="far fa-moon"></div>
+    
+      <script>
+        //gets the button by ID from your HTML element
+        const themeBtn = document.getElementById("theme-btn");
+        //when you click that button
+        themeBtn.onclick = () => {
+        //the default class "fa-moon" switches to "fa-sun" on toggle
+          themeBtn.classList.toggle("fa-sun");
+        //after the switch on toggle, if your button contains "fa-sun" class
+          if (themeBtn.classList.contains("fa-sun")) {
+        //onclicking themeBtn, the changeTheme styling will be applied to the body of your HTML
+            document.body.classList.add("changeTheme");
+          } else {
+        // onclicking themeBtn, applied changeTheme styling will be removed
+            document.body.classList.remove("changeTheme");
+          }
+        }
+    </script>
+    <article>
+      <header>
+        <h1 style="text-align: center;"><strong>CONTACT</strong></h1>
+        <nav style="display:flow-root;">
+          <hr>
+          <nav style="display:flow-root;">
+            <hr>
+      
+              <a href="page1.html">Homepage</a>
+              <a href="about.html">About</a>
+              <a href="work.html">Work</a>
+              <a href="resume.html">Resume</a>
+              <a href="contact.html">Contact</a>
+          </nav>
+      </header>
+    </article>
+    <header>
+      <h1>
+        <strong>Please fill in Details</strong> 
+      </h1>
+    </header>
+    <br>
+    <section>
+      <form>
+        <label style="border: #eee;">FirstName:</label><br>
+        <input type="text" name="first name\" placeholder="input your name here "/>
+        <br>
+        <label style="border: #eee;">LastName:</label><br>
+        <input type="text" name="Last Name\" placeholder="Input LastName"/>
+        <br>
+        <label style="border: #eee;"> Number:</label><br>
+        <input type="number" name="phone" value="25565568686"/>
+        <br>
+
+        <label style="border: #eee;">Password:</label><br>
+        <input type="password" name="password"/>
+        <br>
+
+        <input type="submit" value="submit">
+        <br>
+      </form>
+    </section>
+    <br>
+    <p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+
+<footer style="text-align: center;">
+  Copyright &copy; GoMyCode Inc.
+  <nav style="display:flow-root;">
+    <hr>
+
+      <a href="page1.html">Homepage</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+</footer>
+
+    
+</body>
+</html>
